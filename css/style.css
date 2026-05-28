@@ -884,3 +884,30 @@ footer {
   .about-img-wrap img { height: 260px; }
   .product-grid { grid-template-columns: 1fr; }
 }
+
+
+.av {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.av img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.av {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f59e0b;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
