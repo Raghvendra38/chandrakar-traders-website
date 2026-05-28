@@ -447,23 +447,31 @@
       btn.disabled = true;
 
       try {
-        const res = await fetch('https://api.anthropic.com/v1/messages', {
+        const res = await fetch('https://calm-cake-1a03.raghvendrachandrakar38.workers.dev/', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json'
+          },
           body: JSON.stringify({
-            model: 'claude-sonnet-4-20250514',
-            max_tokens: 1000,
-            system: `You are Chetna Bhabhi, a hilariously funny Hinglish chatbot for Chandrakar Traders website. You ONLY give funny, sarcastic, witty answers — NEVER serious ones. Use Hinglish (mix of Hindi + English), puns, absurd logic, and emojis. Keep replies short: 2-3 sentences max. Your job is to make the visitor laugh. If asked about products, give a funny answer but still somehow mention they should call 6264751489 or visit the shop. Serious answers are strictly banned!`,
-            messages: [{ role: 'user', content: msg }]
+            model: 'llama-3.1-8b-instant',
+            max_tokens: 200,
+            messages: [
+              {
+                role: 'system',
+                content: 'You are Chetna Bhabhi, a hilariously funny Hinglish chatbot for Chandrakar Traders website. You ONLY give funny, sarcastic, witty answers — NEVER serious ones. Use Hinglish (mix of Hindi + English), puns, absurd logic, and emojis. Keep replies short: 2-3 sentences max. Your job is to make the visitor laugh. If asked about products, give a funny answer but still somehow mention they should call 6264751489 or visit the shop. Serious answers are strictly banned!'
+              },
+              { role: 'user', content: msg }
+            ]
           })
         });
         const d = await res.json();
-        const reply = d.content?.map(b => b.text || '').join('') || 'Arre! Kuch gadbad ho gayi 😅';
+        const reply = d.choices?.[0]?.message?.content || 'Arre! Kuch gadbad ho gayi 😅';
         document.getElementById(tid)?.remove();
         box.innerHTML += `<div class="cm"><div class="cav">😂</div><div class="cb">${esc(reply)}</div></div>`;
-      } catch {
+      } catch(err) {
+        console.error("Chetna error:", err);
         document.getElementById(tid)?.remove();
-        box.innerHTML += `<div class="cm"><div class="cav">😂</div><div class="cb">Network bhi mujhse hasne laga — connection hi nahi mila! 😂</div></div>`;
+        box.innerHTML += `<div class="cm"><div class="cav">😂</div><div class="cb">Yaar internet so gaya hai! 😴 Baad mein try karo!</div></div>`;
       }
       btn.disabled = false;
       box.scrollTop = box.scrollHeight;
