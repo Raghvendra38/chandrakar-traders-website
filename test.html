@@ -1,68 +1,483 @@
-<div class="contact-form-wrap">
-  <h3>Send Us a Message</h3>
-  <form id="contact-form" novalidate>
-    <div class="form-row">
-      <div class="form-group">
-        <label for="name">Your Name *</label>
-        <input type="text" id="name" name="name" placeholder="e.g. Rajesh Kumar" required>
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandrakar Traders & Motor Pump | Amleshwar, Raipur</title>
+
+  <!-- Meta description kept under 160 chars -->
+  <meta name="description" content="Trusted supplier of motor pumps, cement, TMT rods, sand & construction materials in Amleshwar, Raipur, Chhattisgarh. Call: 6264751489">
+
+  <meta name="keywords" content="motor pump supplier Amleshwar, cement supplier Raipur, sand supplier Amleshwar, TMT rods supplier, construction materials Raipur, Chandrakar Traders, motor pump shop near me">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical (with trailing slash, consistent with og:url) -->
+  <link rel="canonical" href="https://chandrakartraders.ragdev.co.in/">
+
+  <meta name="google-site-verification" content="4Vh2odypJPwiwEx4FZqqNSaRTvQyIgGOB4-RMnvL1b8" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chandrakar Traders & Motor Pump">
+  <meta property="og:description" content="Motor pump and construction material supplier in Amleshwar, Raipur, Chhattisgarh.">
+  <meta property="og:image" content="https://chandrakartraders.ragdev.co.in/images/banner.jpg">
+  <meta property="og:url" content="https://chandrakartraders.ragdev.co.in">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Chandrakar Traders & Motor Pump",
+    "image": "https://chandrakartraders.ragdev.co.in/images/banner.jpg",
+    "telephone": "+916264751489",
+    "email": "info@chandrakartraders.in",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Amleshwar Nadi Kinare, Luck Dhaba Ke Paas",
+      "addressLocality": "Amleshwar",
+      "addressRegion": "Chhattisgarh",
+      "postalCode": "493225",
+      "addressCountry": "IN"
+    },
+    "url": "https://chandrakartraders.ragdev.co.in/",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <span><span class="icon">📍</span> Amleshwar Nadi Kinare, Near Luck Dhaba, Raipur, Chhattisgarh</span>
+    <span><span class="icon">📞</span> <a href="tel:+916264751489">6264751489</a> &nbsp;|&nbsp; <span class="icon">✉️</span> <a href="mailto:info@chandrakartraders.in">info@chandrakartraders.in</a></span>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <div class="logo-icon">🏗️</div>
+      <h1>Chandrakar <span>Traders</span></h1>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">⭐ Trusted Since 10+ Years</div>
+      <h2>Your Local Supplier for <em>Motor Pumps</em> & Construction Materials</h2>
+      <p>Serving Amleshwar, Raipur and nearby villages with quality products at fair prices.</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-primary">Get a Quote →</a>
+        <a href="tel:+916264751489" class="btn btn-outline">📞 Call Now</a>
       </div>
-      <div class="form-group">
-        <label for="phone">Phone Number *</label>
-        <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num">10+</div>
+          <div class="label">Years in Business</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">500+</div>
+          <div class="label">Happy Customers</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">6</div>
+          <div class="label">Product Categories</div>
+        </div>
       </div>
     </div>
-    <div class="form-group">
-      <label for="product">Product Interested In</label>
-      <select id="product" name="product">
-        <option value="">— Select a Product —</option>
-        <option>Motor Pump</option>
-        <option>River Sand</option>
-        <option>Rocks / Gitti</option>
-        <option>TMT Rods</option>
-        <option>Cement</option>
-        <option>Murum</option>
-        <option>Multiple Products</option>
-      </select>
+  </section>
+
+  <!-- About Preview -->
+  <section class="about-preview">
+    <div class="about-img-wrap">
+      <img src="images/shop.jpg" alt="Chandrakar Traders Shop" loading="lazy">
+      <div class="about-badge">
+        <div class="big">✓</div>
+        <div class="small">Trusted Supplier</div>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="message">Your Message *</label>
-      <textarea id="message" name="message" placeholder="Describe your requirement, quantity needed, delivery location..." required></textarea>
+    <div class="about-text">
+      <div class="section-label">About Us</div>
+      <h2 class="section-title">Chandrakar Traders & Motor Pump</h2>
+      <p>We are a trusted construction material and motor pump supplier located at Amleshwar Nadi Kinare, Luck Dhaba Ke Paas, Raipur, Chhattisgarh.</p>
+      <p>We provide high quality motor pumps, sand, TMT rods, cement, rocks and murum at affordable prices — delivered to your site across Raipur and nearby areas.</p>
+      <div class="features-list">
+        <div class="feature-item"><span class="check">✓</span> Quality Products</div>
+        <div class="feature-item"><span class="check">✓</span> Affordable Prices</div>
+        <div class="feature-item"><span class="check">✓</span> Fast Delivery</div>
+        <div class="feature-item"><span class="check">✓</span> Trusted Service</div>
+      </div>
+      <br>
+      <a href="about.html" class="btn btn-primary">Learn More →</a>
     </div>
-    <button type="submit" class="btn-submit">Send Message →</button>
-    <div id="form-success"></div>
-  </form>
+  </section>
 
-  <p style="margin-top:20px;font-size:13px;color:var(--text-muted);text-align:center;">
-    Or contact directly via
-    <a href="https://wa.me/916264751489" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">WhatsApp</a> for faster response
-  </p>
-</div>
+  <!-- Products -->
+  <section class="products">
+    <div class="products-header">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Our Products</h2>
+      <p class="section-sub">Quality construction materials and motor pumps for homes, farms and commercial sites.</p>
+    </div>
+    <div class="product-grid">
+      <div class="card">
+        <div class="card-img">
+          <img src="images/motor.jpg" alt="Submersible Motor Pump" loading="lazy">
+          <span class="card-tag">Popular</span>
+        </div>
+        <div class="card-body">
+          <h3>Motor Pumps</h3>
+          <p>High performance submersible motor pumps for borewells and water supply.</p>
+          <a href="products.html" class="card-link">View Details →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="images/sand.jpg" alt="Construction Sand" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Sand</h3>
+          <p>Best quality river sand for construction and plastering work.</p>
+          <a href="products.html" class="card-link">View Details →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="images/rocks.jpg" alt="Construction Rocks and Gitti" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Rocks & Gitti</h3>
+          <p>Strong crushed stone and gitti for solid construction foundations.</p>
+          <a href="products.html" class="card-link">View Details →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="images/rods.jpg" alt="TMT Steel Rods" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>TMT Rods</h3>
+          <p>High strength TMT rods for durable RCC construction.</p>
+          <a href="products.html" class="card-link">View Details →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cement.jpg" alt="Cement Bags" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Cement</h3>
+          <p>Premium quality OPC and PPC cement bags from top brands.</p>
+          <a href="products.html" class="card-link">View Details →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="images/murum.jpg" alt="Murum for land filling and levelling" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Murum</h3>
+          <p>Best quality murum for land filling, road base and site levelling.</p>
+          <a href="products.html" class="card-link">View Details →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>
-  document.getElementById('contact-form').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const message = document.getElementById('message').value.trim();
-    const successDiv = document.getElementById('form-success');
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="testimonials-header">
+      <div class="section-label">Customer Reviews</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>Best quality cement and sand supplier in Amleshwar. Very reasonable prices and on-time delivery to our construction site.</p>
+        <h4>— Rajesh Verma, Raipur</h4>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>Good quality motor pumps and knowledgeable staff. They helped me select the right submersible pump for my borewell depth.</p>
+        <h4>— Suresh Yadav, Amleshwar</h4>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>Trusted construction material shop near Raipur. I have been purchasing from Chandrakar Traders for years. Highly recommended.</p>
+        <h4>— Amit Sahu, Kumhari</h4>
+      </div>
+    </div>
+  </section>
 
-    if (!name || !phone || !message) {
-      successDiv.innerHTML = '<p style="color:red;">Please fill in all required fields.</p>';
-      return;
+  <!-- Areas We Serve -->
+  <section class="areas">
+    <div class="section-label">Delivery Coverage</div>
+    <h2 class="section-title">Areas We Serve</h2>
+    <div class="areas-grid">
+      <span>Amleshwar</span>
+      <span>Raipur</span>
+      <span>Bhilai</span>
+      <span>Durg</span>
+      <span>Kumhari</span>
+      <span>Abhanpur</span>
+      <span>Nearby Villages</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-text">Chandrakar <span>Traders</span></div>
+        <p>Your trusted supplier of motor pumps and construction materials in Amleshwar, Raipur, Chhattisgarh.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/916264751489" class="social-link" target="_blank" rel="noopener">💬</a>
+          <a href="tel:+916264751489" class="social-link">📞</a>
+          <a href="mailto:info@chandrakartraders.in" class="social-link">✉️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">→ Home</a></li>
+          <li><a href="about.html">→ About Us</a></li>
+          <li><a href="products.html">→ Products</a></li>
+          <li><a href="contact.html">→ Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <span class="fci">📍</span>
+          <span>Amleshwar Nadi Kinare,<br>Luck Dhaba Ke Paas,<br>Raipur, Chhattisgarh</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="fci">📞</span>
+          <a href="tel:+916264751489">6264751489</a>
+        </div>
+        <div class="footer-contact-item">
+          <span class="fci">✉️</span>
+          <a href="mailto:info@chandrakartraders.in">info@chandrakartraders.in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Chandrakar Traders & Motor Pump. All rights reserved.</span>
+      <span>Made with ❤️ in Chhattisgarh</span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/916264751489" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+  <!-- Call Float -->
+  <a href="tel:+916264751489" class="call-float" aria-label="Call Now">📞 Call Now</a>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+
+  <!-- ===== CHETNA CHATBOT ===== -->
+  <style>
+    #chetna-btn {
+      position: fixed; bottom: 100px; right: 28px; z-index: 9998;
+      width: 60px; height: 60px; border-radius: 50%; border: none; cursor: pointer;
+      background: linear-gradient(135deg, #f0a500, #e07b00);
+      box-shadow: 0 6px 20px rgba(240,165,0,0.5);
+      font-size: 26px; display: flex; align-items: center; justify-content: center;
+      transition: transform 0.2s;
+      animation: chetna-pulse 2.5s ease-in-out infinite;
+    }
+    #chetna-btn:hover { transform: scale(1.12); }
+    @keyframes chetna-pulse {
+      0%,100% { box-shadow: 0 6px 20px rgba(240,165,0,0.5); }
+      50%      { box-shadow: 0 6px 30px rgba(240,165,0,0.8); }
+    }
+    #chetna-box {
+      display: none; position: fixed; bottom: 172px; right: 28px; z-index: 9998;
+      width: 320px; background: #fff; border-radius: 18px;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.18);
+      flex-direction: column; overflow: hidden;
+      font-family: 'DM Sans', sans-serif;
+    }
+    #chetna-box.open { display: flex; animation: chetna-up 0.25s ease; }
+    @keyframes chetna-up {
+      from { opacity:0; transform:translateY(14px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    #chetna-head {
+      background: linear-gradient(135deg, #0a1628, #1e3a5f);
+      padding: 12px 16px; display: flex; align-items: center; gap: 10px;
+    }
+    #chetna-head .av {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: linear-gradient(135deg,#f0a500,#e07b00);
+      display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0;
+    }
+    #chetna-head .info h4 { color:#fff; font-size:14px; font-weight:700; margin:0; }
+    #chetna-head .info span { color:#f0a500; font-size:11px; }
+    #chetna-head .info { flex:1; }
+    #chetna-head button {
+      background:none; border:none; color:rgba(255,255,255,0.6);
+      font-size:18px; cursor:pointer; padding:2px 4px; line-height:1;
+    }
+    #chetna-head button:hover { color:#fff; }
+    #chetna-msgs {
+      padding: 14px; min-height:200px; max-height:300px;
+      overflow-y:auto; display:flex; flex-direction:column; gap:10px;
+      background:#f9fafb;
+    }
+    .cm { display:flex; gap:7px; align-items:flex-end; }
+    .cm.u { flex-direction:row-reverse; }
+    .cb {
+      max-width:78%; padding:8px 12px; border-radius:13px;
+      font-size:13.5px; line-height:1.5; color:#1a1a2e;
+      background:#fff; box-shadow:0 1px 5px rgba(0,0,0,0.07);
+    }
+    .cm.u .cb { background:linear-gradient(135deg,#0a1628,#1e3a5f); color:#fff; }
+    .cav {
+      width:26px; height:26px; border-radius:50%;
+      background:linear-gradient(135deg,#f0a500,#e07b00);
+      display:flex; align-items:center; justify-content:center;
+      font-size:13px; flex-shrink:0;
+    }
+    .typing-dots span {
+      display:inline-block; width:6px; height:6px; border-radius:50%;
+      background:#f0a500; margin:0 2px;
+      animation:tdot 1s infinite;
+    }
+    .typing-dots span:nth-child(2){animation-delay:.15s;}
+    .typing-dots span:nth-child(3){animation-delay:.3s;}
+    @keyframes tdot {
+      0%,80%,100%{transform:translateY(0);}
+      40%{transform:translateY(-5px);}
+    }
+    #chetna-foot {
+      padding:10px 12px; background:#fff; border-top:1px solid #f0f2f8;
+      display:flex; gap:8px;
+    }
+    #chetna-inp {
+      flex:1; border:1.5px solid #e5e7eb; border-radius:9px;
+      padding:8px 11px; font-size:13.5px; font-family:'DM Sans',sans-serif;
+      outline:none; transition:border-color .15s;
+    }
+    #chetna-inp:focus { border-color:#f0a500; }
+    #chetna-go {
+      background:linear-gradient(135deg,#f0a500,#e07b00);
+      border:none; border-radius:9px; color:#fff; font-size:16px;
+      width:38px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+      transition:transform .15s;
+    }
+    #chetna-go:hover{transform:scale(1.08);}
+    #chetna-go:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+  </style>
+
+  <button id="chetna-btn" title="Baat karo Chetna se 😂" onclick="chetnaToggle()">😂</button>
+
+  <div id="chetna-box">
+    <div id="chetna-head">
+      <div class="av">😂</div>
+      <div class="info">
+        <h4>Chetna</h4>
+        <span>Certified Funny Bot™</span>
+      </div>
+      <button onclick="chetnaToggle()">✕</button>
+    </div>
+    <div id="chetna-msgs">
+      <div class="cm">
+        <div class="cav">😂</div>
+        <div class="cb">Namaste! 🙏 Main hoon Chetna — duniya ki #1 funny chatbot! Kuch bhi pucho, serious jawab? Never! 😜</div>
+      </div>
+    </div>
+    <div id="chetna-foot">
+      <input id="chetna-inp" type="text" placeholder="Kuch bhi pucho... 😄" onkeydown="if(event.key==='Enter')chetnaSend()"/>
+      <button id="chetna-go" onclick="chetnaSend()">➤</button>
+    </div>
+  </div>
+
+  <script>
+    function chetnaToggle() {
+      const b = document.getElementById('chetna-box');
+      b.classList.toggle('open');
+      if (b.classList.contains('open')) document.getElementById('chetna-inp').focus();
     }
 
-    // Send to Formspree
-    const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, phone, product: document.getElementById('product').value, message })
-    });
+    async function chetnaSend() {
+      const inp = document.getElementById('chetna-inp');
+      const msg = inp.value.trim();
+      if (!msg) return;
+      inp.value = '';
+      const box = document.getElementById('chetna-msgs');
+      const btn = document.getElementById('chetna-go');
 
-    if (res.ok) {
-      successDiv.innerHTML = '<p style="color:green;">✓ Message sent! We will contact you shortly.</p>';
-      this.reset();
-    } else {
-      successDiv.innerHTML = '<p style="color:red;">Something went wrong. Please try WhatsApp instead.</p>';
+      box.innerHTML += `<div class="cm u"><div class="cb">${esc(msg)}</div></div>`;
+      const tid = 'tid' + Date.now();
+      box.innerHTML += `<div class="cm" id="${tid}"><div class="cav">😂</div><div class="cb typing-dots"><span></span><span></span><span></span></div></div>`;
+      box.scrollTop = box.scrollHeight;
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('https://calm-cake-1a03.raghvendrachandrakar38.workers.dev/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            model: 'llama3-70b-8192',
+            max_tokens: 200,
+            messages: [
+              {
+                role: 'system',
+                content: `Tu hai Chetna Bhabhi — Amleshwar ki sabse famous, sabse bindaas, sabse funny aunty-bot! Teri personality: Har jawab mein desi Hinglish + jugaad logic + exaggeration honi chahiye. Kabhi khud ko construction expert bata, kabhi fortune-teller, kabhi drama queen. Agar koi serious sawaal pooche toh usse roast kar pyar se. Short punchy replies — 2-3 lines MAX, har line pe hasi aani chahiye. Emojis zaroor use kar 😂🤣😅💀. Agar products puche (cement, sand, motor pump, TMT rods, gitti, murum) toh funny tarike se bata aur bol "seedha call karo 6264751489 warna pachtaoge!". Hindi film dialogues, desi proverbs, funny comparisons daal. Examples of your style: "motor pump kaisa hai?" → "Bhai humara pump itna powerful hai ki boring well bhi khush ho jaata hai! Call karo 6264751489 warna paani rota rahega 😂". "hi" → "Arre aa gaye! Chetna Bhabhi ready hai — poochho jo poochna ho, serious mat rehna warna boring lag jaoge! 🤣". SERIOUS JAWAB DENA BILKUL MANA HAI. Roast karo, hasao, shop ka number dete raho!`
+              },
+              { role: 'user', content: msg }
+            ]
+          })
+        });
+        const d = await res.json();
+        const reply = d.choices?.[0]?.message?.content || 'Arre! Kuch gadbad ho gayi 😅';
+        document.getElementById(tid)?.remove();
+        box.innerHTML += `<div class="cm"><div class="cav">😂</div><div class="cb">${esc(reply)}</div></div>`;
+      } catch(err) {
+        console.error("Chetna error:", err);
+        document.getElementById(tid)?.remove();
+        box.innerHTML += `<div class="cm"><div class="cav">😂</div><div class="cb">Yaar internet so gaya hai! 😴 Baad mein try karo!</div></div>`;
+      }
+      btn.disabled = false;
+      box.scrollTop = box.scrollHeight;
     }
-  });
-</script>
+
+    function esc(t) {
+      return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+  </script>
+  <!-- ===== END CHETNA ===== -->
+
+</body>
+</html>
