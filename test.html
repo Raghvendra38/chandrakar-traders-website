@@ -1,0 +1,68 @@
+<div class="contact-form-wrap">
+  <h3>Send Us a Message</h3>
+  <form id="contact-form" novalidate>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Rajesh Kumar" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="product">Product Interested In</label>
+      <select id="product" name="product">
+        <option value="">— Select a Product —</option>
+        <option>Motor Pump</option>
+        <option>River Sand</option>
+        <option>Rocks / Gitti</option>
+        <option>TMT Rods</option>
+        <option>Cement</option>
+        <option>Murum</option>
+        <option>Multiple Products</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="message">Your Message *</label>
+      <textarea id="message" name="message" placeholder="Describe your requirement, quantity needed, delivery location..." required></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Send Message →</button>
+    <div id="form-success"></div>
+  </form>
+
+  <p style="margin-top:20px;font-size:13px;color:var(--text-muted);text-align:center;">
+    Or contact directly via
+    <a href="https://wa.me/916264751489" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">WhatsApp</a> for faster response
+  </p>
+</div>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const successDiv = document.getElementById('form-success');
+
+    if (!name || !phone || !message) {
+      successDiv.innerHTML = '<p style="color:red;">Please fill in all required fields.</p>';
+      return;
+    }
+
+    // Send to Formspree
+    const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, phone, product: document.getElementById('product').value, message })
+    });
+
+    if (res.ok) {
+      successDiv.innerHTML = '<p style="color:green;">✓ Message sent! We will contact you shortly.</p>';
+      this.reset();
+    } else {
+      successDiv.innerHTML = '<p style="color:red;">Something went wrong. Please try WhatsApp instead.</p>';
+    }
+  });
+</script>
